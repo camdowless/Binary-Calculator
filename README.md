@@ -1,4 +1,4 @@
-Meeting 1 - 09/08/2000 4:30 pm
+Meeting 1 - 09/08/2020 4:30 pm
   Attendees: Cam, Brayden, Nick, Clay, Mera
   Medium: Zoom
   Meeting minutes: 
