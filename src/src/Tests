@@ -1,0 +1,22 @@
+public class Tests {
+
+    public void testSetN1() {
+        //TODO: Implement test
+    }
+
+    public void testSetN2() {
+        //TODO: Implement test
+    }
+
+    public void testSetOperation() {
+        //TODO: Implement test
+    }
+
+    public void testCalculate() {
+        //TODO: Implement test
+    }
+
+    public void testReset() {
+        //TODO: Implement test
+    }
+}
