@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 public class Tests {
 
     public void testSetN1() {
