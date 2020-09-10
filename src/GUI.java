@@ -11,7 +11,7 @@ public class GUI {
         JLabel label = new JLabel("Hello World");
 
         JPanel panel = new JPanel();
-        panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
+        panel.setBorder(BorderFactory.createEmptyBorder(50, 100, 10, 30));
         panel.setLayout(new GridLayout());
         panel.add(button);
         panel.add(label);
