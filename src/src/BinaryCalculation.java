@@ -25,7 +25,7 @@ public class BinaryCalculation {
         this.n2 = Integer.parseInt(binaryString, 2);
     }
 
-    public void setOperation(String operationString){
+    void setOperation(String operationString){
         /*
         Converts string input, either "+", "-", "*", "/" to an Operation enum
         */
@@ -54,7 +54,20 @@ public class BinaryCalculation {
     }
 
     public int calculate(){
-        //TODO: Implement functionality
+        switch(op){
+            case ADD:
+                return n1 + n2;
+            case SUBTRACT:
+                return n1 - n2;
+            case MULTIPLY:
+                return n1 * n2;
+            case DIVIDE:
+                return n1 / n2;
+            case SQUARE:
+                return n1 ^ 2;
+            case SQRT:
+                return (int)(Math.sqrt(n1));
+        }
         return 0;
     }
 
@@ -63,5 +76,13 @@ public class BinaryCalculation {
         n1 = 0;
         n2 = 0;
         op = null;
+    }
+
+
+    int getN1(){
+        return n1;
+    }
+    int getN2(){
+        return n2;
     }
 }
