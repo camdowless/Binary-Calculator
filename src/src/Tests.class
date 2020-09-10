@@ -2,19 +2,19 @@ import org.junit.Test;
 
 public class Tests {
 
-    public void testSetN1() {
+    public void testIfInputTerminal() {
         //TODO: Implement test
     }
 
-    public void testSetN2() {
+    public void testReset() {
         //TODO: Implement test
     }
 
-    public void testSetOperation() {
+    public void testCase1() {
         //TODO: Implement test
     }
 
-    public void testCalculate() {
+    public void testIfFrontEndConnects() {
         //TODO: Implement test
     }
 
