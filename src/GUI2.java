@@ -17,7 +17,7 @@ public class GUI2 {
     private JLabel displayLabel;
 
     public static void main(String[] args){
-        JFrame frame = new JFrame("Hello World");
+        JFrame frame = new JFrame("Binary Calculator");
         frame.setContentPane(new GUI2().rootPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
