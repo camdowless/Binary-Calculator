@@ -2,7 +2,7 @@ import java.util.NoSuchElementException;
 
 public class BinaryCalculation {
     public enum Operation {
-        ADD, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, SQRT
+        ADD, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, SQRT, RESET
     }
 
     private int n1;
@@ -13,20 +13,24 @@ public class BinaryCalculation {
 
     BinaryCalculation(){}
 
-    public void setN1(String binaryString){
+    void setN1(String binaryString){
         /*
         Converts the binary string input into a base 2 integer and sets n1
          */
-        this.n1 = Integer.parseInt(binaryString, 2);
-        this.n1_set = true;
+        if(!binaryString.equals("")) {
+            this.n1 = Integer.parseInt(binaryString, 2);
+            this.n1_set = true;
+        }
     }
 
-    public void setN2(String binaryString){
+    void setN2(String binaryString){
         /*
         Same thing for n2
          */
-        this.n2 = Integer.parseInt(binaryString, 2);
-        this.n2_set = true;
+        if(!binaryString.equals((""))) {
+            this.n2 = Integer.parseInt(binaryString, 2);
+            this.n2_set = true;
+        }
     }
 
     void setOperation(Operation o){
@@ -38,7 +42,7 @@ public class BinaryCalculation {
         }
     }
 
-    public int calculate(){
+    int calculate(){
         switch(op){
             case ADD:
                 return n1 + n2;
@@ -56,20 +60,14 @@ public class BinaryCalculation {
         return 0;
     }
 
-    public void reset(){
+    void reset(){
         //Called after calculate() and the answer is displayed on the screen.
         n1 = 0;
         n2 = 0;
-        op = null;
+        op = Operation.RESET;
         n1_set = false;
         n2_set = false;
     }
 
 
-    int getN1(){
-        return n1;
-    }
-    int getN2(){
-        return n2;
-    }
 }

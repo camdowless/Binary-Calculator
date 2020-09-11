@@ -23,11 +23,9 @@ public class GUI2 {
     private String n2 = "";
     private boolean IsDisplayBinary = false;
     private int answer;
-    int currentNum = 1;
+    private int currentNum = 1;
 
-    public GUI2(){
-
-
+    private GUI2(){
         displayLabel.setText("");
 
         toggleButton.addActionListener(e -> {
@@ -96,6 +94,7 @@ public class GUI2 {
         });
 
         clearButton.addActionListener(e -> {
+            currentNum = 1;
             n1 = "";
             n2 = "";
             answer = 0;
@@ -130,7 +129,6 @@ public class GUI2 {
         } else {
             System.err.println("Error");
         }
-
     }
     private void addZero(){
         /*
