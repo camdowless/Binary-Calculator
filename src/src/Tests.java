@@ -1,23 +1,25 @@
 import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class Tests {
     BinaryCalculation c = new BinaryCalculation();
 
     @Test
     public void testIfInputTerminal() {
-
+        //TODO: Implement Test
     }
 
     @Test
     public void testReset() {
-        //TODO: Implement Test
+        c.reset();
+        Assert.assertNotNull(c);
     }
 
     @Test
     public void testCalculate() {
         /*
-        Assert.fail();
+        c.calculate(c.setN1("0101")) + (c.setN2("1110"));
+        Assert.assertEquals(c.calculate(), "10000");
         */
     }
 
