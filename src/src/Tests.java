@@ -1,15 +1,16 @@
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class Tests {
+    BinaryCalculation c = new BinaryCalculation();
 
     @Test
     public void testIfInputTerminal() {
-        //TODO: Implement Test
+
     }
 
     @Test
-    public void testReset(){
+    public void testReset() {
         //TODO: Implement Test
     }
 
@@ -22,18 +23,14 @@ public class Tests {
 
     @Test
     public void testSetN1() {
-        /*
-        String n1 = setN1("1,0,0,1");
-        Assert.assertEquals(n1, 9);
-        */
+        c.setN1("0011");
+        Assert.assertEquals(c.getN1(), 3);
     }
 
     @Test
     public void testSetN2() {
-        /*
-        String n2 = setN2("0,0,1,1");
-        Assert.assertEquals(n2, 3);
-        */
+        c.setN2("0011");
+        Assert.assertEquals(c.getN2(), 3);
     }
 
     @Test

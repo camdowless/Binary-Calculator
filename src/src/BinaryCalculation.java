@@ -1,5 +1,3 @@
-import java.util.NoSuchElementException;
-
 public class BinaryCalculation {
     public enum Operation {
         ADD, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, SQRT, RESET
@@ -69,5 +67,10 @@ public class BinaryCalculation {
         n2_set = false;
     }
 
-
+    int getN1(){
+        return n1;
+    }
+    int getN2(){
+        return n2;
+    }
 }
