@@ -4,10 +4,7 @@ import org.junit.Test;
 public class Tests {
     BinaryCalculation c = new BinaryCalculation();
 
-    @Test
-    public void testIfInputTerminal() {
-        //TODO: Implement Test
-    }
+   
 
     @Test
     public void testReset() {
@@ -35,8 +32,5 @@ public class Tests {
         Assert.assertEquals(c.getN2(), 3);
     }
 
-    @Test
-    public void testSetOperation() {
-        //TODO: Implement Test
-    }
+   
 }
