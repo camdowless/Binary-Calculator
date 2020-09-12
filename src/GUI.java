@@ -20,12 +20,14 @@ public class GUI {
     //dummy values used until backend is attached//
     private int num;
     private int result = 8;
+    private String displayNumber = "";
 
     public GUI() {
         zeroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                displayLabel.setText("0");
+                displayNumber+="0";
+                displayLabel.setText(displayNumber);
                 num = 0;
 
                 //making sure it works in console//
@@ -35,7 +37,52 @@ public class GUI {
         oneButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                displayLabel.setText("1");
+                displayNumber+="1";
+                displayLabel.setText(displayNumber);
+                num = 1;
+
+                //making sure it works in console//
+                System.out.println(num);
+            }
+        });
+        subtractButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                displayNumber+="-";
+                displayLabel.setText(displayNumber);
+                num = 1;
+
+                //making sure it works in console//
+                System.out.println(num);
+            }
+        });
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                displayNumber+="+";
+                displayLabel.setText(displayNumber);
+                num = 1;
+
+                //making sure it works in console//
+                System.out.println(num);
+            }
+        });
+        multiplyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                displayNumber+="*";
+                displayLabel.setText(displayNumber);
+                num = 1;
+
+                //making sure it works in console//
+                System.out.println(num);
+            }
+        });
+        divideButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                displayNumber+="/";
+                displayLabel.setText(displayNumber);
                 num = 1;
 
                 //making sure it works in console//
@@ -45,7 +92,8 @@ public class GUI {
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                displayLabel.setText("Cleared");
+                displayNumber="";
+                displayLabel.setText(displayNumber);
                 num = 0;
 
                 //making sure it works in console//
